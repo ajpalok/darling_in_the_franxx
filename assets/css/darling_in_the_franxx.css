@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.copyright{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9rem;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 999;
+}
+
+.copyright a{
+  text-decoration: underline;
+  color: #fefefe;
+  font-weight: 600;
+}
+
+.scroll_smooth{
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.gap100vh{
+  height: 100vh;
+}
+
+/* section 1 */
+
+.ditf_background_01{
+  background: #000000 url("/assets/img/background/background.png") no-repeat;
+  background-size: cover;
+  width: 100vw;
+  padding-bottom: 80vh;
+}
+
+.fixed_text_000{
+  background-color: transparent;
+  transform: translateZ(-2.5px) scale(3.5);
+  overflow: hidden;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.75rem;
+  color: #fff;
+  z-index: 100;
+}
+
+.fixed_text_000 .line{
+  width: 2.7rem;
+}
+
+.fixed_text_code_no{
+  font-size: 2.75rem;
+}
+
+.ditf_background_01 .background_01_base{
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1)), url("/assets/img/items/strelizia_full.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  filter: brightness(1) contrast(3) grayscale(1);
+  webkit-filter: brightness(1) contrast(3) grayscale(1);
+  mix-blend-mode: multiply;
+  transform: translateZ(0) scale(1);
+}
+
+
+.ditf_background_01 .hiro_zero_two{
+  background: url("/assets/img/items/hiro_zero_two.png") no-repeat top;
+  background-size: contain;
+  min-height: 100%;
+  padding-bottom: 100vh;
+  filter: grayscale(100%);
+  webkit-filter: grayscale(100%);
+  transform: translateZ(-0.7px) scale(1);
+}
+
+/* section 2 */
+
+.ditf_background_02{
+  background: linear-gradient(rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%), url(/assets/img/items/DARLING_in_the_FRANXX-title-en.png) no-repeat center, #000;
+  background-size: contain;
+  width: 100vw;
+  height: 150vh;
+  padding: 50vh 1vw;
+}
+
+.ditf_background_02 .intro_text h1{
+  height: 100vh;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ditf_background_02 .intro_text div{
+  transform: translateZ(-1.5px) scale(2.5);
+}
+
+.anime_name .blue_x{
+  color: #039fd9;
+}
+
+.anime_name .red_x{
+  color: #ff0000;
+}
+
+/* section 3 */
+
+.ditf_background_03{
+  background: url("/assets/img/background/background.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 50vh;
+  padding-bottom: 50vh;
+}
+
+.ditf_background_03 section{
+  padding-top: 80vh;
+  padding-bottom: 80vh;
+}
+
+.franxx_name{
+  font-size: 4rem;
+  text-shadow: 0 0 0.25rem #000000, 0 0 0.5rem #030303;
+  float: right;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.char_male, .char_female{
+  background-size: 193px 625px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transform: translateZ(-1px) scale(.9);
+  color: #fff;
+  z-index: 3;
+}
+
+.char_male .charname_male, .char_female .charname_female{
+  font-size: 5rem;
+  text-shadow: 0 0 0.25rem #000000, 0 0 0.5rem #030303;
+  color: #fff;
+  position: absolute;
+}
+.char_male .charname_male{
+  bottom: -5rem;
+  right: -3rem;
+}
+.char_female .charname_female{
+  top: -5rem;
+  left: -3rem;
+}
+
+/* each pairs as same as from this one */
+/* strelizia */
+
+.ditf_background_03 .franxx_strelizia{
+  background: url('/assets/img/items/strelizia.png') no-repeat top, #a0a0a0;
+  background-size: contain: ;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+}
+
+.hiro{
+  background: url('/assets/img/items/hiro_stand.png') no-repeat top;
+  background-size: contain;
+  float: right;
+  height: 625px;
+  width: 193px;
+  
+}
+
+.zero_two{
+  background: url('/assets/img/items/Zero_Two.png') no-repeat top;
+  background-size: contain;
+  float: left;
+  height: 625px;
+  width: 193px;
+}
+
+/* delphinium */
+
+.ditf_background_03 .franxx_delphinium{
+  background: url('/assets/img/items/delphinium.png') no-repeat top, #a0a0a0;
+  background-size: contain;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+}
+
+.goro{
+  background: url('/assets/img/items/goro_stand.png') no-repeat top;
+  background-size: contain;
+  float: right;
+  height: 625px;
+  width: 193px;}
+
+.ichigo{
+  background: url('/assets/img/items/ichigo_stand.png') no-repeat top;
+  background-size: contain;
+  float: left;
+  height: 625px;
+  width: 193px;
+}
+
+/* argentea */
+
+.ditf_background_03 .franxx_argentea{
+  background: url('/assets/img/items/argentea.png') no-repeat top, #a0a0a0;
+  background-size: contain;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+}
+
+.zorome{
+  background: url('/assets/img/items/zorome_stand.png') no-repeat top;
+  background-size: contain;
+  float: right;
+  height: 625px;
+  width: 193px;}
+
+.miku{
+  background: url('/assets/img/items/miku_stand.png') no-repeat top;
+  background-size: contain;
+  float: left;
+  height: 625px;
+  width: 193px;
+}
+
+/* Genista */
+
+.ditf_background_03 .franxx_genista{
+  background: url('/assets/img/items/genista.png') no-repeat top, #a0a0a0;
+  background-size: contain;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+}
+
+.futoshi{
+  background: url('/assets/img/items/futoshi_stand.png') no-repeat top;
+  background-size: contain;
+  float: right;
+  height: 650px;
+  width: 240px;}
+
+.kokoro{
+  background: url('/assets/img/items/kokoro_stand.png') no-repeat top;
+  background-size: contain;
+  float: left;
+  height: 625px;
+  width: 193px;
+}
+
+/* Chlorophytum */
+
+.ditf_background_03 .franxx_chlorophytum{
+  background: url('/assets/img/items/chlorophytum.png') no-repeat top, #a0a0a0;
+  background-size: contain;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+}
+
+.mitsuru{
+  background: url('/assets/img/items/mitsuru_stand.png') no-repeat top;
+  background-size: contain;
+  float: right;
+  height: 625px;
+  width: 193px;}
+
+.ikuno{
+  background: url('/assets/img/items/ikuno_stand.png') no-repeat top;
+  background-size: contain;
+  float: left;
+  height: 625px;
+  width: 193px;
+}
+
+/* End of charecters */
+
+/* section 4 */
+
+.about{
+  width: 100vw;
+  min-height: 100vh;
+  background: url('/assets/img/background/ditf_background_04.png') no-repeat center, #922323;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 0 0 0.25rem #000000, 0 0 0.5rem #030303;
+  padding: 50vh 2rem;
+}
+
+.about .info{
+  text-align: center;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.about .info a, .about .note a{
+  text-decoration: underline;
+  color: #fefefe;
+  font-weight: 600;
+}
+
+.info span.anime_name{
+  background: rgb(36,69,98);
+  background: -webkit-linear-gradient(55deg, rgba(0,2,4,0.4) 0%, rgba(0,2,4,0.7) 100%);
+  background: -moz-linear-gradient(55deg, rgba(0,2,4,0.4) 0%, rgba(0,2,4,0.7) 100%);
+  background: -o-linear-gradient(55deg, rgba(0,2,4,0.4) 0%, rgba(0,2,4,0.7) 100%);
+  background: linear-gradient(145deg, rgba(0,2,4,0.4) 0%, rgba(0,2,4,0.7) 100%);
+  padding: .2rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.about .note{
+  margin: 10rem auto;
+  width: 20rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  -ms-text-justify: inter-word;
+  text-justify: inter-word;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.about .socials{
+  width: 20rem;
+  margin: 5rem auto;
+}
+
+.about .socials ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.about .socials h3{
+  text-align: center;
+  font-weight: 600;
+  padding: 1rem 0.5rem;
+  font-size: 1.7rem;
+}
+
+.about .socials ul li a{
+  text-decoration: underline;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #fefefe;
+  font-weight: 600;
+  transition: 1s ease;
+}
+
+.about .socials ul li a:hover{
+  font-size: 2.5rem;
+  transition: 0.5s ease;
+}
+
+.about .socials ul li a.fb:hover, .about .socials ul li a.li:hover{
+  background-color: #0095ff;
+}
+
+.about .socials ul li a.tw:hover{
+  background-color: #1cd2ff;
+}
+
+.about .socials ul li a.yt:hover{
+  background-color: #ff4e4e;
+}
+
+.about .socials ul li a.ig:hover{
+  background-color: #405de6;
+}
+
+.about .socials ul li a.gh:hover{
+  background-color: #000000;
+}
