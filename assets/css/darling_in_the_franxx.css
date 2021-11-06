@@ -11,7 +11,11 @@ html{
   font-size: 16px;
   font-family: 'Titillium Web', sans-serif;
 }
-
+@media only screen and (max-width: 441px) {
+  html{
+    font-size: 8px;
+  }
+}
 .copyright{
   position: fixed;
   bottom: 1rem;
@@ -103,7 +107,7 @@ html{
   padding: 50vh 1vw;
 }
 
-.ditf_background_02 .intro_text h1{
+.ditf_background_02 .intro_text .anime_name{
   height: 100vh;
   color: #fff;
   font-size: 3rem;
@@ -111,9 +115,6 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.ditf_background_02 .intro_text div{
   transform: translateZ(-1.5px) scale(2.5);
 }
 
@@ -191,8 +192,8 @@ html{
   background: url('/assets/img/items/hiro_stand.png') no-repeat top;
   background-size: contain;
   float: right;
-  height: 625px;
-  width: 193px;
+  height: 39.0625rem;
+  width: 12.0625rem;
   
 }
 
@@ -200,8 +201,8 @@ html{
   background: url('/assets/img/items/Zero_Two.png') no-repeat top;
   background-size: contain;
   float: left;
-  height: 625px;
-  width: 193px;
+  height: 39.0625rem;
+  width: 12.0625rem;
 }
 
 /* delphinium */
@@ -220,15 +221,16 @@ html{
   background: url('/assets/img/items/goro_stand.png') no-repeat top;
   background-size: contain;
   float: right;
-  height: 625px;
-  width: 193px;}
+  height: 39.0625rem;
+  width: 12.0625rem;
+}
 
 .ichigo{
   background: url('/assets/img/items/ichigo_stand.png') no-repeat top;
   background-size: contain;
   float: left;
-  height: 625px;
-  width: 193px;
+  height: 39.0625rem;
+  width: 12.0625rem;
 }
 
 /* argentea */
@@ -247,15 +249,15 @@ html{
   background: url('/assets/img/items/zorome_stand.png') no-repeat top;
   background-size: contain;
   float: right;
-  height: 625px;
-  width: 193px;}
+  height: 39.0625rem;
+  width: 12.0625rem;}
 
 .miku{
   background: url('/assets/img/items/miku_stand.png') no-repeat top;
   background-size: contain;
   float: left;
-  height: 625px;
-  width: 193px;
+  height: 39.0625rem;
+  width: 12.0625rem;
 }
 
 /* Genista */
@@ -274,15 +276,15 @@ html{
   background: url('/assets/img/items/futoshi_stand.png') no-repeat top;
   background-size: contain;
   float: right;
-  height: 650px;
-  width: 240px;}
+  height: 42.0625rem;
+  width: 15.0625rem;}
 
 .kokoro{
   background: url('/assets/img/items/kokoro_stand.png') no-repeat top;
   background-size: contain;
   float: left;
-  height: 625px;
-  width: 193px;
+  height: 39.0625rem;
+  width: 12.0625rem;
 }
 
 /* Chlorophytum */
@@ -301,15 +303,15 @@ html{
   background: url('/assets/img/items/mitsuru_stand.png') no-repeat top;
   background-size: contain;
   float: right;
-  height: 625px;
-  width: 193px;}
+  height: 39.0625rem;
+  width: 12.0625rem;}
 
 .ikuno{
   background: url('/assets/img/items/ikuno_stand.png') no-repeat top;
   background-size: contain;
   float: left;
-  height: 625px;
-  width: 193px;
+  height: 39.0625rem;
+  width: 12.0625rem;
 }
 
 /* End of charecters */
@@ -328,7 +330,7 @@ html{
 
 .about .info{
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 4rem;
 }
 
@@ -338,7 +340,7 @@ html{
   font-weight: 600;
 }
 
-.info span.anime_name{
+.info .anime_name{
   background: rgb(36,69,98);
   background: -webkit-linear-gradient(55deg, rgba(0,2,4,0.4) 0%, rgba(0,2,4,0.7) 100%);
   background: -moz-linear-gradient(55deg, rgba(0,2,4,0.4) 0%, rgba(0,2,4,0.7) 100%);
