@@ -377,7 +377,7 @@ html{
 
 .about .ads .adbody{
   width: 100%;
-  height: auto;
+  height: 20rem;
   padding: 2px;
   border: 2.5px solid #a42222;
   border-radius: 10px;
