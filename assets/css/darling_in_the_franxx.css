@@ -369,24 +369,19 @@ html{
 .about .socials ul{
   list-style-type: none;
   font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .about .ads .adbody{
   width: 100%;
   height: auto;
   padding: 2px;
-  font-size: 1.2rem;
   border: 2.5px solid #a42222;
   border-radius: 10px;
   background-color: #00000042;
-}
-
-
-.about .socials ul, .about .ads .adbody{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .about .socials h3, .about .ads h3{
