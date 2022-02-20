@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
 *{
-  margin: 0px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 html{
-  scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 8px;
   font-family: 'Titillium Web', sans-serif;
 }
-@media only screen and (max-width: 441px) {
+
+/* @media only screen and (max-width: 441px) {
   html{
     font-size: 8px;
   }
-}
+} */
 .copyright{
   position: fixed;
   bottom: 1rem;
@@ -46,7 +46,8 @@ html{
 /* section 1 */
 
 .ditf_background_01{
-  background: #000000 url("/assets/img/background/background.png") no-repeat;
+  background: url("/assets/img/background/background.png") no-repeat, #922323;
+  -webkit-background-size: cover;
   background-size: cover;
   width: 100vw;
   padding-bottom: 80vh;
@@ -78,10 +79,12 @@ html{
 
 .ditf_background_01 .background_01_base{
   background: linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1)), url("/assets/img/items/strelizia_full.jpg") no-repeat center;
+  -webkit-background-size: cover;
   background-size: cover;
   height: 100vh;
+  -webkit-filter: brightness(1) contrast(3) grayscale(1);
+  -ms-filter: brightness(1) contrast(3) grayscale(1);
   filter: brightness(1) contrast(3) grayscale(1);
-  webkit-filter: brightness(1) contrast(3) grayscale(1);
   mix-blend-mode: multiply;
   transform: translateZ(0) scale(1);
 }
@@ -89,18 +92,24 @@ html{
 
 .ditf_background_01 .hiro_zero_two{
   background: url("/assets/img/items/hiro_zero_two.png") no-repeat top;
+  -webkit-background-size: contain;
   background-size: contain;
   min-height: 100%;
   padding-bottom: 100vh;
+  -webkit-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
   filter: grayscale(100%);
-  webkit-filter: grayscale(100%);
   transform: translateZ(-0.7px) scale(1);
 }
 
 /* section 2 */
 
 .ditf_background_02{
+  background: -webkit-linear-gradient(rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%), url(/assets/img/items/DARLING_in_the_FRANXX-title-en.png) no-repeat center, #000;
+  background: -moz-linear-gradient(rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%), url(/assets/img/items/DARLING_in_the_FRANXX-title-en.png) no-repeat center, #000;
+  background: -o-linear-gradient(rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%), url(/assets/img/items/DARLING_in_the_FRANXX-title-en.png) no-repeat center, #000;
   background: linear-gradient(rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%), url(/assets/img/items/DARLING_in_the_FRANXX-title-en.png) no-repeat center, #000;
+  -webkit-background-size: contain;
   background-size: contain;
   width: 100vw;
   height: 150vh;
@@ -130,6 +139,7 @@ html{
 
 .ditf_background_03{
   background: url("/assets/img/background/background.png") no-repeat;
+  -webkit-background-size: cover;
   background-size: cover;
   position: relative;
   padding-top: 50vh;
@@ -153,8 +163,9 @@ html{
 
 .char_male, .char_female{
   background-size: 193px 625px;
-  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
   transform: translateZ(-1px) scale(.9);
   color: #fff;
   z-index: 3;
@@ -180,9 +191,11 @@ html{
 
 .ditf_background_03 .franxx_strelizia{
   background: url('/assets/img/items/strelizia.png') no-repeat top, #a0a0a0;
-  background-size: contain: ;
-  filter: grayscale(100%);
+  -webkit-background-size: contain;
+  background-size: contain;
   -webkit-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
   position: relative;
   width: 100vw;
   height: 70vh;
@@ -190,6 +203,7 @@ html{
 
 .hiro{
   background: url('/assets/img/items/hiro_stand.png') no-repeat top;
+  -webkit-background-size: contain;
   background-size: contain;
   float: right;
   height: 39.0625rem;
@@ -199,6 +213,7 @@ html{
 
 .zero_two{
   background: url('/assets/img/items/Zero_Two.png') no-repeat top;
+  -webkit-background-size: contain;
   background-size: contain;
   float: left;
   height: 39.0625rem;
@@ -209,9 +224,11 @@ html{
 
 .ditf_background_03 .franxx_delphinium{
   background: url('/assets/img/items/delphinium.png') no-repeat top, #a0a0a0;
+  -webkit-background-size: contain;
   background-size: contain;
-  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
   position: relative;
   width: 100vw;
   height: 70vh;
@@ -219,6 +236,7 @@ html{
 
 .goro{
   background: url('/assets/img/items/goro_stand.png') no-repeat top;
+  -webkit-background-size: contain;
   background-size: contain;
   float: right;
   height: 39.0625rem;
@@ -227,6 +245,7 @@ html{
 
 .ichigo{
   background: url('/assets/img/items/ichigo_stand.png') no-repeat top;
+  -webkit-background-size: contain;
   background-size: contain;
   float: left;
   height: 39.0625rem;
@@ -237,9 +256,11 @@ html{
 
 .ditf_background_03 .franxx_argentea{
   background: url('/assets/img/items/argentea.png') no-repeat top, #a0a0a0;
+  -webkit-background-size: contain;
   background-size: contain;
-  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
   position: relative;
   width: 100vw;
   height: 70vh;
@@ -247,6 +268,7 @@ html{
 
 .zorome{
   background: url('/assets/img/items/zorome_stand.png') no-repeat top;
+  -webkit-background-size: contain;
   background-size: contain;
   float: right;
   height: 39.0625rem;
@@ -254,6 +276,7 @@ html{
 
 .miku{
   background: url('/assets/img/items/miku_stand.png') no-repeat top;
+  -webkit-background-size: contain;
   background-size: contain;
   float: left;
   height: 39.0625rem;
@@ -264,9 +287,11 @@ html{
 
 .ditf_background_03 .franxx_genista{
   background: url('/assets/img/items/genista.png') no-repeat top, #a0a0a0;
+  -webkit-background-size: contain;
   background-size: contain;
-  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
   position: relative;
   width: 100vw;
   height: 70vh;
@@ -274,6 +299,7 @@ html{
 
 .futoshi{
   background: url('/assets/img/items/futoshi_stand.png') no-repeat top;
+  -webkit-background-size: contain;
   background-size: contain;
   float: right;
   height: 42.0625rem;
@@ -281,6 +307,7 @@ html{
 
 .kokoro{
   background: url('/assets/img/items/kokoro_stand.png') no-repeat top;
+  -webkit-background-size: contain;
   background-size: contain;
   float: left;
   height: 39.0625rem;
@@ -291,9 +318,11 @@ html{
 
 .ditf_background_03 .franxx_chlorophytum{
   background: url('/assets/img/items/chlorophytum.png') no-repeat top, #a0a0a0;
+  -webkit-background-size: contain;
   background-size: contain;
-  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
   position: relative;
   width: 100vw;
   height: 70vh;
@@ -301,6 +330,7 @@ html{
 
 .mitsuru{
   background: url('/assets/img/items/mitsuru_stand.png') no-repeat top;
+  -webkit-background-size: contain;
   background-size: contain;
   float: right;
   height: 39.0625rem;
@@ -308,6 +338,7 @@ html{
 
 .ikuno{
   background: url('/assets/img/items/ikuno_stand.png') no-repeat top;
+  -webkit-background-size: contain;
   background-size: contain;
   float: left;
   height: 39.0625rem;
@@ -322,7 +353,8 @@ html{
   width: 100vw;
   min-height: 100vh;
   background: url('/assets/img/background/ditf_background_04.png') no-repeat center, #922323;
-  background-size: cover;
+  -webkit-background-size: contain;
+  background-size: contain;
   color: #fff;
   text-shadow: 0 0 0.25rem #000000, 0 0 0.5rem #030303;
   padding: 50vh 2rem;
@@ -399,11 +431,19 @@ html{
   border-radius: 0.5rem;
   color: #fefefe;
   font-weight: 600;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
   transition: 1s ease;
 }
 
 .about .socials ul li a:hover{
   font-size: 2.5rem;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
