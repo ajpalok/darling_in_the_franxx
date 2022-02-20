@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
 *{
-  margin: 0px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 html{
-  scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 8px;
   font-family: 'Titillium Web', sans-serif;
 }
-@media only screen and (max-width: 441px) {
+
+/* @media only screen and (max-width: 441px) {
   html{
     font-size: 8px;
   }
-}
+} */
 .copyright{
   position: fixed;
   bottom: 1rem;
@@ -33,10 +33,6 @@ html{
 }
 
 .scroll_smooth{
-  -webkit-perspective: 1px;
-  -moz-perspective: 1px;
-  -ms-perspective: 1px;
-  -o-perspective: 1px;
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
@@ -59,10 +55,6 @@ html{
 
 .fixed_text_000{
   background-color: transparent;
-  -webkit-transform: translateZ(-2.5px) scale(3.5);
-  -moz-transform: translateZ(-2.5px) scale(3.5);
-  -ms-transform: translateZ(-2.5px) scale(3.5);
-  -o-transform: translateZ(-2.5px) scale(3.5);
   transform: translateZ(-2.5px) scale(3.5);
   overflow: hidden;
   position: fixed;
@@ -94,10 +86,6 @@ html{
   -ms-filter: brightness(1) contrast(3) grayscale(1);
   filter: brightness(1) contrast(3) grayscale(1);
   mix-blend-mode: multiply;
-  -webkit-transform: translateZ(0) scale(1);
-  -moz-transform: translateZ(0) scale(1);
-  -ms-transform: translateZ(0) scale(1);
-  -o-transform: translateZ(0) scale(1);
   transform: translateZ(0) scale(1);
 }
 
@@ -111,10 +99,6 @@ html{
   -webkit-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   filter: grayscale(100%);
-  -webkit-transform: translateZ(-0.7px) scale(1);
-  -moz-transform: translateZ(-0.7px) scale(1);
-  -ms-transform: translateZ(-0.7px) scale(1);
-  -o-transform: translateZ(-0.7px) scale(1);
   transform: translateZ(-0.7px) scale(1);
 }
 
@@ -140,10 +124,6 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-transform: translateZ(-1.5px) scale(2.5);
-  -moz-transform: translateZ(-1.5px) scale(2.5);
-  -ms-transform: translateZ(-1.5px) scale(2.5);
-  -o-transform: translateZ(-1.5px) scale(2.5);
   transform: translateZ(-1.5px) scale(2.5);
 }
 
@@ -186,10 +166,6 @@ html{
   -webkit-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   filter: grayscale(100%);
-  -webkit-transform: translateZ(-1px) scale(.9);
-  -moz-transform: translateZ(-1px) scale(.9);
-  -ms-transform: translateZ(-1px) scale(.9);
-  -o-transform: translateZ(-1px) scale(.9);
   transform: translateZ(-1px) scale(.9);
   color: #fff;
   z-index: 3;
